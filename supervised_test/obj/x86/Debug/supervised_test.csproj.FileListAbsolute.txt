@@ -1,0 +1,128 @@
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\bin\Debug\CreateROI.XML
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\bin\Debug\CreateROI.dll
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\bin\Debug\CreateROI.pdb
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\obj\x86\Debug\Interop.COM_IDL_connectLib.dll
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\obj\x86\Debug\supervised_test.csproj.ResolveComReference.cache
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\obj\x86\Debug\supervised_test.fmDefineROI.resources
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\obj\x86\Debug\CreateROI.Properties.Resources.resources
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\obj\x86\Debug\CreateROI.dll
+C:\Users\zhzhx\Documents\Visual Studio 2010\Projects\supervised_test\supervised_test\obj\x86\Debug\CreateROI.pdb
+D:\Desktop\supervised_test\supervised_test\obj\x86\Debug\supervised_test.csprojAssemblyReference.cache
+D:\Desktop\supervised_test\supervised_test\obj\x86\Debug\Interop.COM_IDL_connectLib.dll
+D:\Desktop\supervised_test\supervised_test\obj\x86\Debug\Interop.COM_IDL_connect_x86_64Lib.dll
+D:\Desktop\supervised_test\supervised_test\obj\x86\Debug\supervised_test.csproj.ResolveComReference.cache
+D:\Desktop\supervised_test\supervised_test\obj\x86\Debug\supervised_test.fmDefineROI.resources
+D:\Desktop\supervised_test\supervised_test\obj\x86\Debug\CreateROI.Properties.Resources.resources
+D:\Desktop\supervised_test\supervised_test\obj\x86\Debug\supervised_test.csproj.GenerateResource.cache
+D:\Desktop\supervised_test\supervised_test\obj\x86\Debug\supervised_test.csproj.CoreCompileInputs.cache
+D:\Desktop\supervised_test\supervised_test\obj\x86\Debug\CreateROI.pdb
+D:\Desktop\supervised_test\supervised_test\bin\Debug\CreateROI.XML
+D:\Desktop\supervised_test\supervised_test\bin\Debug\CreateROI.pdb
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.3DAnalyst.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.AxControls.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Carto.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Controls.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesRaster.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Display.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Geodatabase.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Geometry.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.GlobeCore.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Output.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.System.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.SystemUI.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Version.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Animation.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Server.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.GISClient.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.GeoDatabaseExtensions.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesFile.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.GeoDatabaseDistributed.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.NetworkAnalyst.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Geoprocessing.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesNetCDF.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.GeoAnalyst.dll
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.3DAnalyst.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Carto.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Controls.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesRaster.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Display.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Geodatabase.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Geometry.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.GlobeCore.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Output.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.System.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.SystemUI.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Animation.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Server.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.GISClient.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.GeoDatabaseExtensions.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesFile.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.GeoDatabaseDistributed.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.NetworkAnalyst.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.Geoprocessing.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesNetCDF.xml
+D:\Desktop\supervised_test\supervised_test\bin\Debug\ESRI.ArcGIS.GeoAnalyst.xml
+D:\Desktop\supervised_test\supervised_test\obj\x86\Debug\supervised_test.csproj.CopyComplete
+D:\Desktop\supervised_test\supervised_test\bin\Debug\CreateROI.exe
+D:\Desktop\supervised_test\supervised_test\obj\x86\Debug\CreateROI.exe
+D:\Desktop\RSImage\supervised_test\bin\Debug\CreateROI.XML
+D:\Desktop\RSImage\supervised_test\bin\Debug\CreateROI.exe
+D:\Desktop\RSImage\supervised_test\bin\Debug\CreateROI.pdb
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.3DAnalyst.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.AxControls.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Carto.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Controls.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesRaster.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Display.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Geodatabase.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Geometry.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.GlobeCore.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Output.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.System.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.SystemUI.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Version.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Animation.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Server.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.GISClient.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.GeoDatabaseExtensions.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesFile.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.GeoDatabaseDistributed.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.NetworkAnalyst.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Geoprocessing.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesNetCDF.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.GeoAnalyst.dll
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.3DAnalyst.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Carto.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Controls.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesRaster.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Display.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Geodatabase.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Geometry.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.GlobeCore.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Output.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.System.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.SystemUI.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Animation.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Server.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.GISClient.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.GeoDatabaseExtensions.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesFile.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.GeoDatabaseDistributed.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.NetworkAnalyst.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.Geoprocessing.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.DataSourcesNetCDF.xml
+D:\Desktop\RSImage\supervised_test\bin\Debug\ESRI.ArcGIS.GeoAnalyst.xml
+D:\Desktop\RSImage\supervised_test\obj\x86\Debug\supervised_test.csprojAssemblyReference.cache
+D:\Desktop\RSImage\supervised_test\obj\x86\Debug\Interop.COM_IDL_connectLib.dll
+D:\Desktop\RSImage\supervised_test\obj\x86\Debug\Interop.COM_IDL_connect_x86_64Lib.dll
+D:\Desktop\RSImage\supervised_test\obj\x86\Debug\supervised_test.csproj.ResolveComReference.cache
+D:\Desktop\RSImage\supervised_test\obj\x86\Debug\supervised_test.FmDefineROI.resources
+D:\Desktop\RSImage\supervised_test\obj\x86\Debug\CreateROI.Properties.Resources.resources
+D:\Desktop\RSImage\supervised_test\obj\x86\Debug\supervised_test.csproj.GenerateResource.cache
+D:\Desktop\RSImage\supervised_test\obj\x86\Debug\supervised_test.csproj.CoreCompileInputs.cache
+D:\Desktop\RSImage\supervised_test\obj\x86\Debug\supervised_test.csproj.CopyComplete
+D:\Desktop\RSImage\supervised_test\obj\x86\Debug\CreateROI.exe
+D:\Desktop\RSImage\supervised_test\obj\x86\Debug\CreateROI.pdb

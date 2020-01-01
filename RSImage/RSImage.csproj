@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16E3F6FB-8142-4340-B1D8-DD2EEB04D5FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RSImage</RootNamespace>
+    <AssemblyName>RSImage</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ProgramIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdalconst_csharp, Version=1.0.5262.33387, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\gdalconst_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gdal_csharp, Version=1.0.5262.33386, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\gdal_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=4.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.4.9.0\lib\net461\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="ogr_csharp, Version=1.0.5262.33386, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ogr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="osr_csharp, Version=1.0.5262.33386, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\osr_csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonControls\NumericSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\NumericSelector.Designer.cs">
+      <DependentUpon>NumericSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\ValueSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\ValueSelector.Designer.cs">
+      <DependentUpon>ValueSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAboutThisApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAboutThisApp.Designer.cs">
+      <DependentUpon>FrmAboutThisApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmApplyGainOffset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmApplyGainOffset.Designer.cs">
+      <DependentUpon>FrmApplyGainOffset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBandSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBandSelector.Designer.cs">
+      <DependentUpon>FrmBandSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\ConfirmAbortButtons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\ConfirmAbortButtons.Designer.cs">
+      <DependentUpon>ConfirmAbortButtons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums.cs" />
+    <Compile Include="FrmBinarize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBinarize.Designer.cs">
+      <DependentUpon>FrmBinarize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCut.Designer.cs">
+      <DependentUpon>FrmCut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExport.Designer.cs">
+      <DependentUpon>FrmExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIsoData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIsoData.Designer.cs">
+      <DependentUpon>FrmIsoData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKMeans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKMeans.Designer.cs">
+      <DependentUpon>FrmKMeans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomStretch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustomStretch.Designer.cs">
+      <DependentUpon>FrmCustomStretch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImgSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImgSelect.Designer.cs">
+      <DependentUpon>FrmImgSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProgress.Designer.cs">
+      <DependentUpon>FrmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRGB2Gray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRGB2Gray.Designer.cs">
+      <DependentUpon>FrmRGB2Gray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSmooth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSmooth.Designer.cs">
+      <DependentUpon>FrmSmooth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmViewMetaData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewMetaData.Designer.cs">
+      <DependentUpon>FrmViewMetaData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Obj.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CommonControls\FilePathSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\FilePathSelector.Designer.cs">
+      <DependentUpon>FilePathSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonControls\ValueEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonControls\ValueEditor.Designer.cs">
+      <DependentUpon>ValueEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRoughness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRoughness.Designer.cs">
+      <DependentUpon>FrmRoughness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmColorSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColorSelection.designer.cs">
+      <DependentUpon>FrmColorSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\BaseProcess.cs" />
+    <Compile Include="Tools\Common.cs" />
+    <Compile Include="Tools\FourierTransformation.cs" />
+    <Compile Include="Tools\ImageClassification.cs" />
+    <Compile Include="Tools\ImageFusion.cs" />
+    <Compile Include="Tools\ImageSplit.cs" />
+    <Compile Include="Tools\RadiometricCalibration.cs" />
+    <Compile Include="FrmViewHistogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmViewHistogram.Designer.cs">
+      <DependentUpon>FrmViewHistogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\SpatialEnhancement.cs" />
+    <EmbeddedResource Include="CommonControls\NumericSelector.resx">
+      <DependentUpon>NumericSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\ValueSelector.resx">
+      <DependentUpon>ValueSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAboutThisApp.resx">
+      <DependentUpon>FrmAboutThisApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmApplyGainOffset.resx">
+      <DependentUpon>FrmApplyGainOffset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBandSelector.resx">
+      <DependentUpon>FrmBandSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\ConfirmAbortButtons.resx">
+      <DependentUpon>ConfirmAbortButtons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBinarize.resx">
+      <DependentUpon>FrmBinarize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCut.resx">
+      <DependentUpon>FrmCut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExport.resx">
+      <DependentUpon>FrmExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIsoData.resx">
+      <DependentUpon>FrmIsoData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKMeans.resx">
+      <DependentUpon>FrmKMeans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomStretch.resx">
+      <DependentUpon>FrmCustomStretch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImgSelect.resx">
+      <DependentUpon>FrmImgSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProgress.resx">
+      <DependentUpon>FrmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRGB2Gray.resx">
+      <DependentUpon>FrmRGB2Gray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSmooth.resx">
+      <DependentUpon>FrmSmooth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewMetaData.resx">
+      <DependentUpon>FrmViewMetaData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CommonControls\FilePathSelector.resx">
+      <DependentUpon>FilePathSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonControls\ValueEditor.resx">
+      <DependentUpon>ValueEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRoughness.resx">
+      <DependentUpon>FrmRoughness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmViewHistogram.resx">
+      <DependentUpon>FrmViewHistogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColorSelection.resx">
+      <DependentUpon>FrmColorSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gdal111.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gdalconst_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="gdal_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="geos_c.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="hdf.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="hdf5.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="jpeg.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mfhdf.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="msvcr110.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ogr_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="osr_wrap.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ProgramIcon.ico" />
+    <Content Include="proj.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\BandSelector\blue.png" />
+    <Content Include="res\BandSelector\Empty.png" />
+    <Content Include="res\BandSelector\filemultispectral.png" />
+    <Content Include="res\BandSelector\gb.png" />
+    <Content Include="res\BandSelector\grayscale.png" />
+    <Content Include="res\BandSelector\green.png" />
+    <Content Include="res\BandSelector\rb.png" />
+    <Content Include="res\BandSelector\red.png" />
+    <Content Include="res\BandSelector\rg.png" />
+    <Content Include="res\BandSelector\rgb.png" />
+    <Content Include="res\close.png" />
+    <Content Include="res\closeall.png" />
+    <Content Include="res\ColorTable\color_tables.png" />
+    <Content Include="res\ColorTable\ct_bgry.png" />
+    <Content Include="res\ColorTable\ct_bluewhite.png" />
+    <Content Include="res\ColorTable\ct_grayscale.png" />
+    <Content Include="res\ColorTable\ct_rainbow.png" />
+    <Content Include="res\ColorTable\ct_redtemp.png" />
+    <Content Include="res\Cross.png" />
+    <Content Include="res\CustomStretch\custom_stretch.png" />
+    <Content Include="res\CustomStretch\hist_blue.png" />
+    <Content Include="res\CustomStretch\hist_green.png" />
+    <Content Include="res\CustomStretch\hist_grey.png" />
+    <Content Include="res\CustomStretch\hist_red.png" />
+    <Content Include="res\Enhancement.bmp" />
+    <Content Include="res\Fusion.png" />
+    <Content Include="res\GrayToAAIGrid.bmp" />
+    <Content Include="res\Register.bmp" />
+    <Content Include="res\ImageProcessing\sharpblur.png" />
+    <Content Include="res\Key.png" />
+    <Content Include="res\Loc.ico" />
+    <Content Include="res\open.png" />
+    <Content Include="res\picture-stats.ico" />
+    <Content Include="res\picture.png" />
+    <Content Include="res\RadiationCalibration.bmp" />
+    <Content Include="res\Reclass.bmp" />
+    <Content Include="res\save.png" />
+    <Content Include="res\spectral.png" />
+    <Content Include="res\Threshold.bmp" />
+    <Content Include="res\TreeView\layerrgb.png" />
+    <Content Include="res\TreeView\view.png" />
+    <Content Include="szip.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="szlibdll.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="xdr.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zlib.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

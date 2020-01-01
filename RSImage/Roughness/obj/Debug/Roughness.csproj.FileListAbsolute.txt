@@ -1,0 +1,10 @@
+D:\Documents\VSProjects\Roughness\Roughness\bin\Debug\Roughness.exe.config
+D:\Documents\VSProjects\Roughness\Roughness\bin\Debug\Roughness.exe
+D:\Documents\VSProjects\Roughness\Roughness\bin\Debug\Roughness.pdb
+D:\Documents\VSProjects\Roughness\Roughness\obj\Debug\Roughness.csprojAssemblyReference.cache
+D:\Documents\VSProjects\Roughness\Roughness\obj\Debug\Roughness.RoughnessForm.resources
+D:\Documents\VSProjects\Roughness\Roughness\obj\Debug\Roughness.Properties.Resources.resources
+D:\Documents\VSProjects\Roughness\Roughness\obj\Debug\Roughness.csproj.GenerateResource.cache
+D:\Documents\VSProjects\Roughness\Roughness\obj\Debug\Roughness.csproj.CoreCompileInputs.cache
+D:\Documents\VSProjects\Roughness\Roughness\obj\Debug\Roughness.exe
+D:\Documents\VSProjects\Roughness\Roughness\obj\Debug\Roughness.pdb
