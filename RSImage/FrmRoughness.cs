@@ -40,6 +40,7 @@ namespace RSImage
             {
                 this.InputImg = Image;
                 NoDataValueTextBox.Text = InputImg.NoDataValue[0].ToString();
+                NewNoDataValueTextBox.Text = NewNoDataValue.ToString();
                 RFFilePathSelector.Filter = "All files|*.*|Geotiff|*.tif";
                 RFFilePathSelector.FilterIndex = 2;
             }
