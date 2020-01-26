@@ -23,6 +23,7 @@ namespace RSImage
         public int ConvertMode;
         public double NoDataValue = -9999;
         public double ReplaceValue = 0;
+        public double NewNoDataValue = 9999;
 
         public List<double[]> ReplaceList = new List<double[]>();
 
@@ -70,7 +71,11 @@ namespace RSImage
                             {
                                 throw new FormatException("替换值输入错误。");
                             }
-                                break;
+                            if (!Double.TryParse(NewNoDataValueTextBox.Text, out NewNoDataValue))
+                            {
+                                throw new FormatException("新NoData值输入错误。");
+                            }
+                            break;
                         }
                     case 1:
                         {

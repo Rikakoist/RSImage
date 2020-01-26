@@ -239,7 +239,7 @@ namespace RSImage
                         {
                             case 0:
                                 {
-                                    if (Tools.BaseProcess.ReplaceNoData(FIS.SelectedImg.GDALDataset,RF.NoDataValue,RF.ReplaceValue,RF.OutDataType,RF.OutPath))
+                                    if (Tools.BaseProcess.ReplaceNoData(FIS.SelectedImg.GDALDataset,RF.NoDataValue,RF.ReplaceValue,RF.OutDataType,RF.OutPath,RF.NewNoDataValue))
                                     {
                                         break;
                                     }

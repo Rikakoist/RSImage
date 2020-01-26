@@ -666,7 +666,7 @@ namespace RSImage.Tools
         /// <param name="OutDataType">输出的数据类型。</param>
         /// <param name="OutPath">输出数据集的路径。</param>
         /// <returns>操作成功或失败。</returns>
-        public static bool ReplaceNoData(OSGeo.GDAL.Dataset InputDS, double NoDataValue, double ReplaceValue, OSGeo.GDAL.DataType OutDataType, string OutPath)
+        public static bool ReplaceNoData(OSGeo.GDAL.Dataset InputDS, double NoDataValue, double ReplaceValue, OSGeo.GDAL.DataType OutDataType, string OutPath, double NewNoDataValue = -9999)
         {
             try
             {
@@ -711,6 +711,10 @@ namespace RSImage.Tools
                         if (Math.Abs(Values[Col] - NoDataValue) > 1e-7)
                         {
                             Values[Col] = ReplaceValue;
+                        }
+                        else
+                        {
+                            Values[Col] = NewNoDataValue;
                         }
                     }
                     DS.GetRasterBand(1).WriteRaster(0, Row, xSize, 1, Values, xSize, 1, 0, 0);

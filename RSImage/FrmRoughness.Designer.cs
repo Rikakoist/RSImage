@@ -42,6 +42,8 @@
             this.TargetValue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RConfirmAbortButtons = new RSImage.CommonControls.ConfirmAbortButtons();
             this.RFFilePathSelector = new RSImage.FilePathSelector();
+            this.NewNoDataLabel = new System.Windows.Forms.Label();
+            this.NewNoDataValueTextBox = new System.Windows.Forms.TextBox();
             this.ModeTabControl.SuspendLayout();
             this.Mode1TabPage.SuspendLayout();
             this.Mode2TabPage.SuspendLayout();
@@ -51,7 +53,7 @@
             // NoDataValueTextBox
             // 
             this.NoDataValueTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.NoDataValueTextBox.Location = new System.Drawing.Point(191, 60);
+            this.NoDataValueTextBox.Location = new System.Drawing.Point(191, 35);
             this.NoDataValueTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.NoDataValueTextBox.Name = "NoDataValueTextBox";
             this.NoDataValueTextBox.Size = new System.Drawing.Size(132, 20);
@@ -60,7 +62,7 @@
             // RoughnessLabel
             // 
             this.RoughnessLabel.AutoSize = true;
-            this.RoughnessLabel.Location = new System.Drawing.Point(15, 115);
+            this.RoughnessLabel.Location = new System.Drawing.Point(15, 89);
             this.RoughnessLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RoughnessLabel.Name = "RoughnessLabel";
             this.RoughnessLabel.Size = new System.Drawing.Size(104, 13);
@@ -70,7 +72,7 @@
             // ReplaceValueTextBox
             // 
             this.ReplaceValueTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ReplaceValueTextBox.Location = new System.Drawing.Point(191, 111);
+            this.ReplaceValueTextBox.Location = new System.Drawing.Point(191, 86);
             this.ReplaceValueTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ReplaceValueTextBox.Name = "ReplaceValueTextBox";
             this.ReplaceValueTextBox.Size = new System.Drawing.Size(132, 20);
@@ -79,7 +81,7 @@
             // NoDataLabel
             // 
             this.NoDataLabel.AutoSize = true;
-            this.NoDataLabel.Location = new System.Drawing.Point(47, 63);
+            this.NoDataLabel.Location = new System.Drawing.Point(47, 38);
             this.NoDataLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NoDataLabel.Name = "NoDataLabel";
             this.NoDataLabel.Size = new System.Drawing.Size(56, 13);
@@ -102,6 +104,8 @@
             // 
             // Mode1TabPage
             // 
+            this.Mode1TabPage.Controls.Add(this.NewNoDataValueTextBox);
+            this.Mode1TabPage.Controls.Add(this.NewNoDataLabel);
             this.Mode1TabPage.Controls.Add(this.ReplaceValueTextBox);
             this.Mode1TabPage.Controls.Add(this.RoughnessLabel);
             this.Mode1TabPage.Controls.Add(this.NoDataLabel);
@@ -198,6 +202,25 @@
             this.RFFilePathSelector.Title = "选择保存位置";
             this.RFFilePathSelector.WorkFolder = "MyDocuments";
             // 
+            // NewNoDataLabel
+            // 
+            this.NewNoDataLabel.AutoSize = true;
+            this.NewNoDataLabel.Location = new System.Drawing.Point(15, 140);
+            this.NewNoDataLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NewNoDataLabel.Name = "NewNoDataLabel";
+            this.NewNoDataLabel.Size = new System.Drawing.Size(92, 13);
+            this.NewNoDataLabel.TabIndex = 4;
+            this.NewNoDataLabel.Text = "将NoData值改为";
+            // 
+            // NewNoDataValueTextBox
+            // 
+            this.NewNoDataValueTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.NewNoDataValueTextBox.Location = new System.Drawing.Point(191, 137);
+            this.NewNoDataValueTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.NewNoDataValueTextBox.Name = "NewNoDataValueTextBox";
+            this.NewNoDataValueTextBox.Size = new System.Drawing.Size(132, 20);
+            this.NewNoDataValueTextBox.TabIndex = 1;
+            // 
             // FrmRoughness
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -235,6 +258,8 @@
         private System.Windows.Forms.DataGridViewButtonColumn DelButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn OriginalValue;
         private System.Windows.Forms.DataGridViewTextBoxColumn TargetValue;
+        private System.Windows.Forms.TextBox NewNoDataValueTextBox;
+        private System.Windows.Forms.Label NewNoDataLabel;
     }
 }
 
