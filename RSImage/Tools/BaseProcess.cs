@@ -710,6 +710,7 @@ namespace RSImage.Tools
                     {
                         if (Math.Abs(Values[Col] - NoDataValue) > 1e-7)
                         {
+                            if(Math.Abs(ReplaceValue - NoDataValue) > 1e-7)
                             Values[Col] = ReplaceValue;
                         }
                         else
