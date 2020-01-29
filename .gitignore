@@ -4,3 +4,6 @@
 
 /.vs
 /packages/MathNet.Numerics.4.9.0
+/RSImage/bin/Release
+/RSImage/obj/Release
+/supervised_test/obj/x86/Release

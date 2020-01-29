@@ -708,9 +708,11 @@ namespace RSImage.Tools
                     InputDS.GetRasterBand(1).ReadRaster(0, Row, xSize, 1, Values, xSize, 1, 0, 0);
                     for (int Col = 0; Col < xSize; Col++)
                     {
+                        
                         if (Math.Abs(Values[Col] - NoDataValue) > 1e-7)
                         {
-                            if(Math.Abs(ReplaceValue - NoDataValue) > 1e-7)
+                            //将ReplaceValue与NoDataValue的值设置为一样的可以仅更改NoData值
+                            if (Math.Abs(ReplaceValue - NoDataValue) > 1e-7)
                             Values[Col] = ReplaceValue;
                         }
                         else
