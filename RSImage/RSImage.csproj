@@ -130,6 +130,12 @@
     <Compile Include="FrmExport.Designer.cs">
       <DependentUpon>FrmExport.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFlood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFlood.Designer.cs">
+      <DependentUpon>FrmFlood.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIsoData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +219,7 @@
     </Compile>
     <Compile Include="Tools\BaseProcess.cs" />
     <Compile Include="Tools\Common.cs" />
+    <Compile Include="Tools\FloodProcessing.cs" />
     <Compile Include="Tools\FourierTransformation.cs" />
     <Compile Include="Tools\ImageClassification.cs" />
     <Compile Include="Tools\ImageFusion.cs" />
@@ -251,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmExport.resx">
       <DependentUpon>FrmExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFlood.resx">
+      <DependentUpon>FrmFlood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIsoData.resx">
       <DependentUpon>FrmIsoData.cs</DependentUpon>

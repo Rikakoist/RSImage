@@ -235,11 +235,11 @@ namespace RSImage
                     FrmRoughness RF = new FrmRoughness(FIS.SelectedImg);
                     if (RF.ShowDialog(this) == DialogResult.OK)
                     {
-                        switch(RF.ConvertMode)
+                        switch (RF.ConvertMode)
                         {
                             case 0:
                                 {
-                                    if (Tools.BaseProcess.ReplaceNoData(FIS.SelectedImg.GDALDataset,RF.NoDataValue,RF.ReplaceValue,RF.OutDataType,RF.OutPath,RF.NewNoDataValue))
+                                    if (Tools.BaseProcess.ReplaceNoData(FIS.SelectedImg.GDALDataset, RF.NoDataValue, RF.ReplaceValue, RF.OutDataType, RF.OutPath, RF.NewNoDataValue))
                                     {
                                         break;
                                     }
@@ -250,7 +250,7 @@ namespace RSImage
                                 }
                             case 1:
                                 {
-                                    if (Tools.BaseProcess.Reclassify(FIS.SelectedImg.GDALDataset,RF.ReplaceList,RF.OutDataType,RF.OutPath))
+                                    if (Tools.BaseProcess.Reclassify(FIS.SelectedImg.GDALDataset, RF.ReplaceList, RF.OutDataType, RF.OutPath))
                                     {
                                         break;
                                     }
@@ -265,7 +265,7 @@ namespace RSImage
                                 }
                         }
                         CheckFile(RF.OutPath);
-                        ManageTreeView();               
+                        ManageTreeView();
                     }
                     RF.Dispose();
                 }
@@ -312,7 +312,7 @@ namespace RSImage
             {
                 OpenFileDialog OFD = new OpenFileDialog()
                 {
-                    AutoUpgradeEnabled=true,
+                    AutoUpgradeEnabled = true,
                     CheckFileExists = true,
                     InitialDirectory = Environment.SpecialFolder.Desktop.ToString(),
                     Multiselect = false,
@@ -320,14 +320,14 @@ namespace RSImage
                 };
                 if (OFD.ShowDialog(this) == DialogResult.OK)
                 {
-                    OSGeo.GDAL.Dataset tmpCutDS= OSGeo.GDAL.Gdal.Open(OFD.FileName, OSGeo.GDAL.Access.GA_ReadOnly);
+                    OSGeo.GDAL.Dataset tmpCutDS = OSGeo.GDAL.Gdal.Open(OFD.FileName, OSGeo.GDAL.Access.GA_ReadOnly);
                     if (tmpCutDS == null)
                         return;
 
-                    FrmCut FC = new FrmCut(tmpCutDS.RasterXSize, tmpCutDS.RasterYSize, "影像裁剪 - "+Path.GetFileName(OFD.FileName));
+                    FrmCut FC = new FrmCut(tmpCutDS.RasterXSize, tmpCutDS.RasterYSize, "影像裁剪 - " + Path.GetFileName(OFD.FileName));
                     if (FC.ShowDialog(this) == DialogResult.OK)
                     {
-                        Tools.BaseProcess.CutImage(tmpCutDS,FC.ImgWidth,FC.ImgHeight,DataType.GDT_Byte,FC.OutPath);
+                        Tools.BaseProcess.CutImage(tmpCutDS, FC.ImgWidth, FC.ImgHeight, DataType.GDT_Byte, FC.OutPath);
                     }
                     FC.Dispose();
                 }
@@ -398,6 +398,24 @@ namespace RSImage
             }
         }
 
+        //洪水处理
+        private void FloodingProcessingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FrmFlood FF = new FrmFlood();
+                if (FF.ShowDialog(this) == DialogResult.OK)
+                {
+                    Tools.FloodProcessing.CalculateFloodArea(FF.InPath, FF.OutPath);
+                }
+                FF.Dispose();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.ToString());
+            }
+        }
+
         //辐射定标
         private void ApplyGainAndOffsetToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -450,9 +468,9 @@ namespace RSImage
                                     Filter = "可执行文件(*.exe)|*.exe",
                                     FilterIndex = 1,
                                     Multiselect = false,
-                                    Title= "指定配准程序...",
+                                    Title = "指定配准程序...",
                                 };
-                                if(OFD.ShowDialog()==DialogResult.OK)
+                                if (OFD.ShowDialog() == DialogResult.OK)
                                 {
                                     fileName = OFD.FileName;
                                 }
@@ -628,7 +646,7 @@ namespace RSImage
                             FrmExport E2 = new FrmExport("选择比值计算结果存储位置。");
                             if (E2.ShowDialog(this) == DialogResult.OK)
                             {
-                                string tmpD1Gray= Tools.Common.GetTempFileName();
+                                string tmpD1Gray = Tools.Common.GetTempFileName();
                                 string tmpD2Gray = Tools.Common.GetTempFileName();
 
                                 string tmpMinus = Tools.Common.GetTempFileName();
@@ -706,14 +724,14 @@ namespace RSImage
         private void KMeansToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
-            {        
+            {
                 FrmImgSelect FIS = new FrmImgSelect(Images, "K-Means非监督分类 - 选择影像...");
                 if (FIS.ShowDialog(this) == DialogResult.OK)
                 {
                     FrmKMeans FKM = new FrmKMeans();
                     if (FKM.ShowDialog(this) == DialogResult.OK)
                     {
-                        if (Tools.ImageClassification.KMeans(FIS.SelectedImg.GDALDataset,FKM.NumOfClass,FKM.MaxIterate,FKM.ChangeThreshold,FKM.Path))
+                        if (Tools.ImageClassification.KMeans(FIS.SelectedImg.GDALDataset, FKM.NumOfClass, FKM.MaxIterate, FKM.ChangeThreshold, FKM.Path))
                         {
                             CheckFile(FKM.Path);
                             ManageTreeView();
@@ -794,7 +812,7 @@ namespace RSImage
                     };
                     Process P = Process.Start(startInfo);
                     P.WaitForExit();
-                    if (P.ExitCode ==1)
+                    if (P.ExitCode == 1)
                     {
                         MessageBox.Show("ROI勾选已完成，请在ENVI中完成监督分类。\r\n（没时间写了，这个程序是我拿的群里曹老大的改的o(=•ェ•=)m）。");
                     }
@@ -984,8 +1002,8 @@ namespace RSImage
         private void ImageListTreeView_DragEnter(object sender, DragEventArgs e)
         {
             //e.Effect = DragDropEffects.Copy;
-            if (e.Data.GetDataPresent(DataFormats.FileDrop))   
-                e.Effect = DragDropEffects.Link;              
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+                e.Effect = DragDropEffects.Link;
             else
                 e.Effect = DragDropEffects.None;
         }
@@ -1000,7 +1018,7 @@ namespace RSImage
             string[] tmpFileList = e.Data.GetData(DataFormats.FileDrop) as string[];
             List<string> fileList = new List<string>();
             fileList.AddRange(tmpFileList);
-            for(int i = 0;i<fileList.Count;i++)
+            for (int i = 0; i < fileList.Count; i++)
             {
                 System.IO.FileInfo fileInfo = new System.IO.FileInfo(fileList[i]);
                 if ((fileInfo.Attributes & System.IO.FileAttributes.Directory) != 0)
@@ -1027,7 +1045,7 @@ namespace RSImage
         }
 
         //搜索目录下所有文件
-        private void GetAllFiles(string Dir,ref List<string> Str)
+        private void GetAllFiles(string Dir, ref List<string> Str)
         {
             DirectoryInfo root = new DirectoryInfo(Dir);
             foreach (FileInfo f in root.GetFiles())
@@ -1131,8 +1149,8 @@ namespace RSImage
             {
                 Img NewImg;
                 this.Cursor = Cursors.WaitCursor;
-                    NewImg = new Img(CheckPath,this,this.HintLabel,this.OperationProgressBar);
-                    Images.Add(NewImg);
+                NewImg = new Img(CheckPath, this, this.HintLabel, this.OperationProgressBar);
+                Images.Add(NewImg);
                 Tools.Common.RebuildBitmap(Images[Images.Count - 1], ImageViewPictureBox.Width, ImageViewPictureBox.Height);    //添加完文件后生成Bitmap。
                 this.Cursor = Cursors.Arrow;
             }

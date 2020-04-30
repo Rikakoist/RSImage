@@ -81,6 +81,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.StretchModeToolStripComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.AboutToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.FloodingProcessingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.ImageViewSplitContainer)).BeginInit();
             this.ImageViewSplitContainer.Panel1.SuspendLayout();
             this.ImageViewSplitContainer.Panel2.SuspendLayout();
@@ -144,14 +145,14 @@
             this.ViewMetadataToolStripMenuItem,
             this.CloseCurrentImageToolStripMenuItem});
             this.TreeViewContextMenuStrip.Name = "TreeViewContextMenuStrip";
-            this.TreeViewContextMenuStrip.Size = new System.Drawing.Size(165, 186);
+            this.TreeViewContextMenuStrip.Size = new System.Drawing.Size(170, 186);
             this.TreeViewContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.TreeViewContextMenuStrip_Opening);
             // 
             // ViewHistogramToolStripMenuItem
             // 
             this.ViewHistogramToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ViewHistogramToolStripMenuItem.Image")));
             this.ViewHistogramToolStripMenuItem.Name = "ViewHistogramToolStripMenuItem";
-            this.ViewHistogramToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.ViewHistogramToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.ViewHistogramToolStripMenuItem.Text = "查看直方图";
             this.ViewHistogramToolStripMenuItem.Click += new System.EventHandler(this.ViewHistogramToolStripMenuItem_Click);
             // 
@@ -159,7 +160,7 @@
             // 
             this.ChangeBandToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ChangeBandToolStripMenuItem.Image")));
             this.ChangeBandToolStripMenuItem.Name = "ChangeBandToolStripMenuItem";
-            this.ChangeBandToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.ChangeBandToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.ChangeBandToolStripMenuItem.Text = "更改波段组合";
             this.ChangeBandToolStripMenuItem.Click += new System.EventHandler(this.ChangeBandToolStripMenuItem_Click);
             // 
@@ -170,14 +171,14 @@
             this.RainbowToolStripMenuItem,
             this.CustomColorToolStripMenuItem});
             this.Gray2RGBToolStripMenuItem.Name = "Gray2RGBToolStripMenuItem";
-            this.Gray2RGBToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.Gray2RGBToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.Gray2RGBToolStripMenuItem.Text = "伪彩色增强";
             // 
             // GrayscaleToolStripMenuItem
             // 
             this.GrayscaleToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("GrayscaleToolStripMenuItem.Image")));
             this.GrayscaleToolStripMenuItem.Name = "GrayscaleToolStripMenuItem";
-            this.GrayscaleToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.GrayscaleToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.GrayscaleToolStripMenuItem.Text = "灰度";
             this.GrayscaleToolStripMenuItem.Click += new System.EventHandler(this.ChangeColorTable);
             // 
@@ -185,7 +186,7 @@
             // 
             this.RainbowToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("RainbowToolStripMenuItem.Image")));
             this.RainbowToolStripMenuItem.Name = "RainbowToolStripMenuItem";
-            this.RainbowToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.RainbowToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.RainbowToolStripMenuItem.Text = "彩虹";
             this.RainbowToolStripMenuItem.Click += new System.EventHandler(this.ChangeColorTable);
             // 
@@ -193,7 +194,7 @@
             // 
             this.CustomColorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CustomColorToolStripMenuItem.Image")));
             this.CustomColorToolStripMenuItem.Name = "CustomColorToolStripMenuItem";
-            this.CustomColorToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.CustomColorToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.CustomColorToolStripMenuItem.Text = "自定义";
             this.CustomColorToolStripMenuItem.Click += new System.EventHandler(this.ChangeColorTable);
             // 
@@ -201,7 +202,7 @@
             // 
             this.RGB2GrayToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("RGB2GrayToolStripMenuItem.Image")));
             this.RGB2GrayToolStripMenuItem.Name = "RGB2GrayToolStripMenuItem";
-            this.RGB2GrayToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.RGB2GrayToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.RGB2GrayToolStripMenuItem.Text = "彩色影像灰度化";
             this.RGB2GrayToolStripMenuItem.Click += new System.EventHandler(this.RGB2GrayToolStripMenuItem_Click);
             // 
@@ -209,14 +210,14 @@
             // 
             this.ExportViewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ExportViewToolStripMenuItem.Image")));
             this.ExportViewToolStripMenuItem.Name = "ExportViewToolStripMenuItem";
-            this.ExportViewToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.ExportViewToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.ExportViewToolStripMenuItem.Text = "导出到TIFF";
             this.ExportViewToolStripMenuItem.Click += new System.EventHandler(this.ExportViewToolStripMenuItem_Click);
             // 
             // ViewMetadataToolStripMenuItem
             // 
             this.ViewMetadataToolStripMenuItem.Name = "ViewMetadataToolStripMenuItem";
-            this.ViewMetadataToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.ViewMetadataToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.ViewMetadataToolStripMenuItem.Text = "查看影像元数据";
             this.ViewMetadataToolStripMenuItem.Click += new System.EventHandler(this.ViewMetadataToolStripMenuItem_Click);
             // 
@@ -224,7 +225,7 @@
             // 
             this.CloseCurrentImageToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CloseCurrentImageToolStripMenuItem.Image")));
             this.CloseCurrentImageToolStripMenuItem.Name = "CloseCurrentImageToolStripMenuItem";
-            this.CloseCurrentImageToolStripMenuItem.Size = new System.Drawing.Size(164, 26);
+            this.CloseCurrentImageToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.CloseCurrentImageToolStripMenuItem.Text = "关闭当前影像";
             this.CloseCurrentImageToolStripMenuItem.Click += new System.EventHandler(this.FileManagement);
             // 
@@ -266,7 +267,7 @@
             // 
             this.HintLabel.Image = ((System.Drawing.Image)(resources.GetObject("HintLabel.Image")));
             this.HintLabel.Name = "HintLabel";
-            this.HintLabel.Size = new System.Drawing.Size(51, 20);
+            this.HintLabel.Size = new System.Drawing.Size(50, 20);
             this.HintLabel.Text = "Hint";
             // 
             // OperationProgressBar
@@ -303,7 +304,7 @@
             this.CloseAllFilesToolStripMenuItem});
             this.FileOperationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("FileOperationToolStripMenuItem.Image")));
             this.FileOperationToolStripMenuItem.Name = "FileOperationToolStripMenuItem";
-            this.FileOperationToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.FileOperationToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
             this.FileOperationToolStripMenuItem.Text = "文件";
             // 
             // OpenFileToolStripMenuItem
@@ -311,7 +312,7 @@
             this.OpenFileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("OpenFileToolStripMenuItem.Image")));
             this.OpenFileToolStripMenuItem.Name = "OpenFileToolStripMenuItem";
             this.OpenFileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.OpenFileToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.OpenFileToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.OpenFileToolStripMenuItem.Text = "打开";
             this.OpenFileToolStripMenuItem.Click += new System.EventHandler(this.FileManagement);
             // 
@@ -320,7 +321,7 @@
             this.CloseFileToolStripMenuItem.Enabled = false;
             this.CloseFileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CloseFileToolStripMenuItem.Image")));
             this.CloseFileToolStripMenuItem.Name = "CloseFileToolStripMenuItem";
-            this.CloseFileToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.CloseFileToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.CloseFileToolStripMenuItem.Text = "关闭";
             this.CloseFileToolStripMenuItem.Click += new System.EventHandler(this.FileManagement);
             // 
@@ -329,7 +330,7 @@
             this.CloseAllFilesToolStripMenuItem.Enabled = false;
             this.CloseAllFilesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CloseAllFilesToolStripMenuItem.Image")));
             this.CloseAllFilesToolStripMenuItem.Name = "CloseAllFilesToolStripMenuItem";
-            this.CloseAllFilesToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.CloseAllFilesToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.CloseAllFilesToolStripMenuItem.Text = "关闭所有";
             this.CloseAllFilesToolStripMenuItem.Click += new System.EventHandler(this.FileManagement);
             // 
@@ -340,10 +341,11 @@
             this.ThresholdToolStripMenuItem,
             this.ReclassifyToolStripMenuItem,
             this.ConvertToAAIGridToolStripMenuItem,
-            this.ImageCutToolStripMenuItem});
+            this.ImageCutToolStripMenuItem,
+            this.FloodingProcessingToolStripMenuItem});
             this.BaseToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("BaseToolStripMenuItem.Image")));
             this.BaseToolStripMenuItem.Name = "BaseToolStripMenuItem";
-            this.BaseToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.BaseToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.BaseToolStripMenuItem.Text = "基础处理";
             // 
             // HistogramMatchingToolStripMenuItem
@@ -351,7 +353,7 @@
             this.HistogramMatchingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("HistogramMatchingToolStripMenuItem.Image")));
             this.HistogramMatchingToolStripMenuItem.Name = "HistogramMatchingToolStripMenuItem";
             this.HistogramMatchingToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.M)));
-            this.HistogramMatchingToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.HistogramMatchingToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.HistogramMatchingToolStripMenuItem.Text = "直方图匹配";
             this.HistogramMatchingToolStripMenuItem.Click += new System.EventHandler(this.HistogramMatchingToolStripMenuItem_Click);
             // 
@@ -360,7 +362,7 @@
             this.ThresholdToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ThresholdToolStripMenuItem.Image")));
             this.ThresholdToolStripMenuItem.Name = "ThresholdToolStripMenuItem";
             this.ThresholdToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U)));
-            this.ThresholdToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.ThresholdToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.ThresholdToolStripMenuItem.Text = "阈值分割";
             this.ThresholdToolStripMenuItem.Click += new System.EventHandler(this.ThresholdToolStripMenuItem_Click);
             // 
@@ -369,7 +371,7 @@
             this.ReclassifyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ReclassifyToolStripMenuItem.Image")));
             this.ReclassifyToolStripMenuItem.Name = "ReclassifyToolStripMenuItem";
             this.ReclassifyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
-            this.ReclassifyToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.ReclassifyToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.ReclassifyToolStripMenuItem.Text = "重分类";
             this.ReclassifyToolStripMenuItem.Click += new System.EventHandler(this.ReclassifyToolStripMenuItem_Click);
             // 
@@ -378,7 +380,7 @@
             this.ConvertToAAIGridToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ConvertToAAIGridToolStripMenuItem.Image")));
             this.ConvertToAAIGridToolStripMenuItem.Name = "ConvertToAAIGridToolStripMenuItem";
             this.ConvertToAAIGridToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.E)));
-            this.ConvertToAAIGridToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.ConvertToAAIGridToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.ConvertToAAIGridToolStripMenuItem.Text = "灰度影像转换到栅格";
             this.ConvertToAAIGridToolStripMenuItem.Click += new System.EventHandler(this.ConvertToAAIGridToolStripMenuItem_Click);
             // 
@@ -387,7 +389,7 @@
             this.ImageCutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ImageCutToolStripMenuItem.Image")));
             this.ImageCutToolStripMenuItem.Name = "ImageCutToolStripMenuItem";
             this.ImageCutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
-            this.ImageCutToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.ImageCutToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.ImageCutToolStripMenuItem.Text = "影像裁剪";
             this.ImageCutToolStripMenuItem.Click += new System.EventHandler(this.ImageCutToolStripMenuItem_Click);
             // 
@@ -397,7 +399,7 @@
             this.ApplyGainAndOffsetToolStripMenuItem});
             this.RadiationCorrectionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("RadiationCorrectionToolStripMenuItem.Image")));
             this.RadiationCorrectionToolStripMenuItem.Name = "RadiationCorrectionToolStripMenuItem";
-            this.RadiationCorrectionToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.RadiationCorrectionToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.RadiationCorrectionToolStripMenuItem.Text = "辐射校正";
             // 
             // ApplyGainAndOffsetToolStripMenuItem
@@ -415,7 +417,7 @@
             this.GeoreferncingToolStripMenuItem});
             this.GeometricProcessingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("GeometricProcessingToolStripMenuItem.Image")));
             this.GeometricProcessingToolStripMenuItem.Name = "GeometricProcessingToolStripMenuItem";
-            this.GeometricProcessingToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.GeometricProcessingToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.GeometricProcessingToolStripMenuItem.Text = "几何处理";
             // 
             // GeoreferncingToolStripMenuItem
@@ -423,7 +425,7 @@
             this.GeoreferncingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("GeoreferncingToolStripMenuItem.Image")));
             this.GeoreferncingToolStripMenuItem.Name = "GeoreferncingToolStripMenuItem";
             this.GeoreferncingToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
-            this.GeoreferncingToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.GeoreferncingToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.GeoreferncingToolStripMenuItem.Text = "地理配准";
             this.GeoreferncingToolStripMenuItem.Click += new System.EventHandler(this.GeoreferncingToolStripMenuItem_Click);
             // 
@@ -434,7 +436,7 @@
             this.FFTFiltToolStripMenuItem});
             this.RadiationEnhancementToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("RadiationEnhancementToolStripMenuItem.Image")));
             this.RadiationEnhancementToolStripMenuItem.Name = "RadiationEnhancementToolStripMenuItem";
-            this.RadiationEnhancementToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.RadiationEnhancementToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.RadiationEnhancementToolStripMenuItem.Text = "辐射增强";
             // 
             // SmoothSharpToolStripMenuItem
@@ -442,7 +444,7 @@
             this.SmoothSharpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("SmoothSharpToolStripMenuItem.Image")));
             this.SmoothSharpToolStripMenuItem.Name = "SmoothSharpToolStripMenuItem";
             this.SmoothSharpToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.SmoothSharpToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.SmoothSharpToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.SmoothSharpToolStripMenuItem.Text = "平滑锐化";
             this.SmoothSharpToolStripMenuItem.Click += new System.EventHandler(this.SmoothSharpToolStripMenuItem_Click);
             // 
@@ -450,7 +452,7 @@
             // 
             this.FFTFiltToolStripMenuItem.Enabled = false;
             this.FFTFiltToolStripMenuItem.Name = "FFTFiltToolStripMenuItem";
-            this.FFTFiltToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.FFTFiltToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.FFTFiltToolStripMenuItem.Text = "滤波（开发中）";
             this.FFTFiltToolStripMenuItem.Click += new System.EventHandler(this.FFTFiltToolStripMenuItem_Click);
             // 
@@ -461,7 +463,7 @@
             this.IHSToolStripMenuItem});
             this.ImageFusionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ImageFusionToolStripMenuItem.Image")));
             this.ImageFusionToolStripMenuItem.Name = "ImageFusionToolStripMenuItem";
-            this.ImageFusionToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.ImageFusionToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.ImageFusionToolStripMenuItem.Text = "影像融合";
             // 
             // BroveyToolStripMenuItem
@@ -469,7 +471,7 @@
             this.BroveyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("BroveyToolStripMenuItem.Image")));
             this.BroveyToolStripMenuItem.Name = "BroveyToolStripMenuItem";
             this.BroveyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.B)));
-            this.BroveyToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.BroveyToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.BroveyToolStripMenuItem.Text = "Brovey";
             this.BroveyToolStripMenuItem.Click += new System.EventHandler(this.BroveyToolStripMenuItem_Click);
             // 
@@ -478,7 +480,7 @@
             this.IHSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("IHSToolStripMenuItem.Image")));
             this.IHSToolStripMenuItem.Name = "IHSToolStripMenuItem";
             this.IHSToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.I)));
-            this.IHSToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.IHSToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.IHSToolStripMenuItem.Text = "IHS";
             this.IHSToolStripMenuItem.Click += new System.EventHandler(this.IHSToolStripMenuItem_Click);
             // 
@@ -487,7 +489,7 @@
             this.ChangeDetectionToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ChangeDetectionToolStripMenuItem.Image")));
             this.ChangeDetectionToolStripMenuItem.Name = "ChangeDetectionToolStripMenuItem";
             this.ChangeDetectionToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
-            this.ChangeDetectionToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.ChangeDetectionToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.ChangeDetectionToolStripMenuItem.Text = "变化检测";
             this.ChangeDetectionToolStripMenuItem.Click += new System.EventHandler(this.ChangeDetectionToolStripMenuItem_Click);
             // 
@@ -498,7 +500,7 @@
             this.SupervisedClassificationToolStripMenuItem});
             this.ImageClassificationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ImageClassificationToolStripMenuItem.Image")));
             this.ImageClassificationToolStripMenuItem.Name = "ImageClassificationToolStripMenuItem";
-            this.ImageClassificationToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.ImageClassificationToolStripMenuItem.Size = new System.Drawing.Size(91, 24);
             this.ImageClassificationToolStripMenuItem.Text = "影像分类";
             // 
             // UnsupervisedClassificationToolStripMenuItem
@@ -508,7 +510,7 @@
             this.IsoDataToolStripMenuItem});
             this.UnsupervisedClassificationToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("UnsupervisedClassificationToolStripMenuItem.Image")));
             this.UnsupervisedClassificationToolStripMenuItem.Name = "UnsupervisedClassificationToolStripMenuItem";
-            this.UnsupervisedClassificationToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
+            this.UnsupervisedClassificationToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.UnsupervisedClassificationToolStripMenuItem.Text = "非监督分类";
             // 
             // KMeansToolStripMenuItem
@@ -517,7 +519,7 @@
             this.KMeansToolStripMenuItem.Name = "KMeansToolStripMenuItem";
             this.KMeansToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.K)));
-            this.KMeansToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.KMeansToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.KMeansToolStripMenuItem.Text = "K-Means";
             this.KMeansToolStripMenuItem.Click += new System.EventHandler(this.KMeansToolStripMenuItem_Click);
             // 
@@ -527,7 +529,7 @@
             this.IsoDataToolStripMenuItem.Name = "IsoDataToolStripMenuItem";
             this.IsoDataToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.I)));
-            this.IsoDataToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
+            this.IsoDataToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.IsoDataToolStripMenuItem.Text = "Iso Data";
             this.IsoDataToolStripMenuItem.Click += new System.EventHandler(this.IsoDataToolStripMenuItem_Click);
             // 
@@ -537,7 +539,7 @@
             this.SupervisedClassificationToolStripMenuItem.Name = "SupervisedClassificationToolStripMenuItem";
             this.SupervisedClassificationToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
             | System.Windows.Forms.Keys.S)));
-            this.SupervisedClassificationToolStripMenuItem.Size = new System.Drawing.Size(196, 26);
+            this.SupervisedClassificationToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.SupervisedClassificationToolStripMenuItem.Text = "监督分类";
             this.SupervisedClassificationToolStripMenuItem.Click += new System.EventHandler(this.SupervisedClassificationToolStripMenuItem_Click);
             // 
@@ -587,6 +589,13 @@
             this.AboutToolStripButton.Name = "AboutToolStripButton";
             this.AboutToolStripButton.Size = new System.Drawing.Size(24, 24);
             this.AboutToolStripButton.Click += new System.EventHandler(this.AboutToolStripButton_Click);
+            // 
+            // FloodingProcessingToolStripMenuItem
+            // 
+            this.FloodingProcessingToolStripMenuItem.Name = "FloodingProcessingToolStripMenuItem";
+            this.FloodingProcessingToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
+            this.FloodingProcessingToolStripMenuItem.Text = "洪水处理";
+            this.FloodingProcessingToolStripMenuItem.Click += new System.EventHandler(this.FloodingProcessingToolStripMenuItem_Click);
             // 
             // FrmMain
             // 
@@ -677,6 +686,7 @@
         private System.Windows.Forms.ToolStripMenuItem IsoDataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ImageCutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ConvertToAAIGridToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem FloodingProcessingToolStripMenuItem;
     }
 }
 
